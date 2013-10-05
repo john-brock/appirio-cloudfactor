@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- author:    @_johnbrock -->
+<!-- date:      10-4-2013   -->
+<!-- challenge: http://www.cloudspokes.com/challenges/2931 -->
+<html>
+   <head>
+      <title>Appirio CloudFactor</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+      <style type="text/css">
+         .container hr {
+         margin-top: 5px;
+         margin-bottom: 20px;
+         border-top: solid #428bca
+         }
+         .btn-contact {
+         background-color: #eee;
+         color: #428bca;
+         border-color: #428bca;
+         margin-right: 20px;
+         margin-top: 5px;
+         }
+         .btn-contact:hover {
+         background-color: #428bca;
+         color: #FFF;
+         border-color: #FFF;
+         margin-right: 20px;
+         margin-top: 5px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="jumbotron">
+            <div class="row">
+               <div class="col-md-6" style="margin-bottom: 20px;">
+                  <img src="https://d8o5ibmu9lfmy.cloudfront.net/cw/prod/console/images/logo.png" class="img-responsive" alt="Appirio">
+               </div>
+               <div class="col-md-6"><a class="btn btn-contact pull-right" href="http://thecloud.appirio.com/contactus.html">Contact Us</a></div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-md-6">
+                  <h3 class="text-muted">Subscription Options</h3>
+               </div>
+               <div class="col-md-6">
+                  <h3 class="text-muted">CloudFactor Order Form</h3>
+               </div>
+            </div>
+            <div class="row marketing">
+               <div class="col-md-6">
+                  <h4><span class="text-primary">Standard Edition</span> - $48.00/user/year</h4>
+                  <h5>
+                     <ul>
+                        <li>All standard email contextual apps</li>
+                        <ul>
+                           <li>Salesforce.com information in Gmail</li>
+                        </ul>
+                        <li>
+                           <div style="margin-top: 5px;">Email sidebar apps</div>
+                        </li>
+                        <ul>
+                           <li>Business Actions</li>
+                           <li>Chatter</li>
+                        </ul>
+                        <li>
+                           <div style="margin-top: 5px; margin-bottom: 20px;">Calendar sidebar app</div>
+                        </li>
+                     </ul>
+                  </h5>
+                  <h4><span class="text-primary">Enterprise Edition</span> - $72.00/user/year</h4>
+                  <h5>
+                     <ul>
+                        <li>Standard Edition features</li>
+                        <li>
+                           <div style="margin-top: 5px;">CloudFactor API</div>
+                        </li>
+                        <ul>
+                           <li>develop custom contextual apps</li>
+                           <li>develop custom sidebar apps</li>
+                        </ul>
+                     </ul>
+                  </h5>
+               </div>
+               <div class="col-md-6">
+                  <form role="form">
+                     <div class="form-group">
+                        <select class="form-control" id="subscriptionType">
+                           <option>Standard Edition - $48.00/user</option>
+                           <option>Enterprise Edition - $72.00/user</option>
+                        </select>
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control required" id="numberOfUsers" placeholder="Number of Users">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="company" placeholder="Company">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="form-control" id="gAppsDomain" placeholder="Google Apps Domain">
+                     </div>
+                     <div class="checkbox">
+                        <label>
+                           <input type="checkbox" id="acceptTerms">
+                           <p>
+                           <h4>I have read and agree to the <a href="https://d8o5ibmu9lfmy.cloudfront.net/cw/prod/legal/t_and_c.html">terms and conditions</a></h4>
+                        </label>
+                     </div>
+                     <button type="submit" class="btn btn-primary btn-block" id="buy">Buy Now</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="footer">
+            <p class="text-muted">&copy; 2013 Appirio. All Rights Reserved  |  <a class="text-muted" href="http://thecloud.appirio.com/privacy/">Privacy Policy</a></p>
+         </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins but not used here, yet) -->
+      <!--script src="//code.jquery.com/jquery.js"></script-->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+   </body>
+</html>
